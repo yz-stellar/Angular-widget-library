@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="title__header">
+        Showcase
+    </div>
+    <s-color-picker (colorChange)="onColorChange($event)"></s-color-picker>
+</div>
+
+<ul class="side-bar">
+    <li class="side-bar__item"> <a routerLink="button">s-button</a></li>
+    <li class="side-bar__item"> <a routerLink="icon">s-icon</a></li>
+    <li class="side-bar__item"> <a routerLink="list">s-list</a></li>
+    <li class="side-bar__item"> <a routerLink="progressbar">s-progressbar</a></li>
+</ul>
+
+<section class="content">
+    <router-outlet></router-outlet>
+</section> 

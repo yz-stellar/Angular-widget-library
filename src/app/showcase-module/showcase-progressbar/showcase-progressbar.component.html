@@ -1,0 +1,28 @@
+<h2>Progressbar</h2>
+<hr>
+
+<pre>
+    &lt;s-progressbar 
+        [videoLength]=&quot;videoLength&quot; 
+        [progressValue]=&quot;progressValue&quot;
+        (currentPosition)=&quot;onCurrentPosition($event)&quot; &gt;
+    &lt;/s-progressbar&gt;
+</pre>
+<div class="wrapper">
+    <s-progressbar 
+        [videoLength]="videoLength" 
+        [progressValue]="progressValue"
+        (currentPosition)="onCurrentPosition($event)" >
+    </s-progressbar>
+
+    <br>
+    <br>
+    <div>{{progressValue}}  / {{videoLength}}</div>
+
+    <br>
+    <s-button class="btn--small" (click)="onPlay()">Play</s-button>
+    <s-button class="btn--small" (click)="onPause()">Pause</s-button>
+    <s-button class="btn--small" (click)="onReset()">Reset</s-button>
+    
+</div>
+<hr />

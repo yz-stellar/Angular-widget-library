@@ -1,0 +1,65 @@
+button {
+  --btn-size-large: 3rem;
+  --btn-size-medium: 2rem;
+  --btn-size-small: 1rem;
+
+  all: unset;
+
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color: var(--highlight-color-global);
+  color: white;
+  border-radius: 8px;
+  border: 1px gray solid;
+  box-shadow: 2px 1px 5px var(--highlight-color-global);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+ 
+  transition-duration: 0.3s;
+}
+button:hover {
+  background-color:var(--highlight-color-global);
+  box-shadow: 2px 5px 10px var(--highlight-color-global);
+  color: #fff;
+}
+
+// large
+:host(.btn--large) button {
+  font-size: var(--btn-size-large);
+  padding: 1rem 2rem;
+  width: calc(var(--btn-size-large) * 3);
+  height: calc(var(--btn-size-large)+ 1);
+  
+  &::ng-deep img {
+    width: var(--btn-size-large);
+    height: var(--btn-size-large);
+  }
+}
+
+// medium
+:host(.btn--medium) button {
+  font-size: var(--btn-size-medium);
+  padding: 0.75rem 1.5rem;
+  width: calc(var(--btn-size-medium) * 3);
+  height: calc(var(--btn-size-medium)+ 1);
+
+  &::ng-deep img {
+    width: var(--btn-size-medium);
+    height: var(--btn-size-medium);
+  }
+}
+
+// small
+:host(.btn--small) button {
+  font-size: var(--btn-size-small);
+  padding: 0.5rem 1rem;
+  width: calc(var(--btn-size-small) * 3);
+  height: calc(var(--btn-size-small)+ 1);
+
+  &::ng-deep img {
+    width: var(--btn-size-small);
+    height: var(--btn-size-small);
+  }
+}

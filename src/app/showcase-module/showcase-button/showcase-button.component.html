@@ -1,0 +1,72 @@
+<h2>Button</h2>
+<hr />
+
+<h3>Button with Text</h3>
+<pre>
+    &lt;s-button class=&quot;btn--large&quot;&gt;Text&lt;/s-button&gt;
+</pre>
+<div class="wrapper">
+    <s-button class="btn--large">Text</s-button>
+    <s-button class="btn--medium">Text</s-button>
+    <s-button class="btn--small">Text</s-button>
+</div>
+<hr />
+
+<h3>Button with icon</h3>
+<pre>
+    &lt;s-button class=&quot;btn--large&quot;&gt; 
+        &lt;s-icon class=&quot;icon--white ng-logo&quot;&gt;&lt;/s-icon&gt;
+    &lt;/s-button&gt;
+
+    &lt;s-button class=&quot;btn--small&quot;&gt;
+        &lt;s-icon [myUrl]=&quot;'https://youricon.svg'&quot;&gt;&lt;/s-icon&gt;
+    &lt;/s-button&gt;
+</pre>
+
+<div class="wrapper">
+    <s-button class="btn--large">
+        <s-icon class="ng-logo"></s-icon>
+    </s-button>
+    <s-button class="btn--medium">
+        <s-icon class="react-logo"></s-icon>
+    </s-button>
+    <s-button class="btn--small">
+        <s-icon class="icon--white" [myUrl]="'https://cdn.svgporn.com/logos/reactivex.svg'"></s-icon>
+    </s-button>
+
+    <s-button class="btn--large">
+        <s-icon class="apple-logo icon--white"></s-icon>
+    </s-button>
+    <s-button class="btn--medium">
+        <s-icon class="apple-logo icon--white"></s-icon>
+
+    </s-button>
+    <s-button class="btn--small">
+        <s-icon class="apple-logo icon--white"></s-icon>
+    </s-button>
+</div>
+<hr />
+
+<h3>Button with icon and text</h3>
+<pre>
+    &lt;s-button class=&quot;btn--large&quot;&gt;
+        &lt;s-icon class=&quot;apple-logo icon--white&quot;&gt;&lt;/s-icon&gt;
+        Text
+    &lt;/s-button&gt;
+</pre>
+
+<div class="wrapper">
+    <s-button class="btn--large">
+        <s-icon class="apple-logo icon--white"></s-icon>
+        Text
+    </s-button>
+    <s-button class="btn--medium">
+        <s-icon class="apple-logo icon--white"></s-icon>
+        Text
+    </s-button>
+    <s-button class="btn--small">
+        <s-icon class="apple-logo icon--white"></s-icon>
+        Text
+    </s-button>
+</div>
+<hr />

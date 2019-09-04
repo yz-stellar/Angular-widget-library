@@ -1,0 +1,33 @@
+:host{
+  all: unset;
+}
+
+li {
+  width: 100%;
+  padding: 3vmin 0 2vmin 1vmin;
+  border-bottom: 0.5px dashed lightgray;
+  cursor: pointer;
+
+  display: inline-grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  justify-content: center;
+  align-items: center;
+
+  transition-duration: 0.3s;
+}
+li:hover {
+  box-shadow: -5px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.2rem;
+ vertical-align: bottom;
+
+}
+.subtitle {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}

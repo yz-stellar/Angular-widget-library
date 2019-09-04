@@ -1,0 +1,57 @@
+* {
+  --icon-size-extra-large: 150px;
+  --icon-size-large: 100px;
+  --icon-size-medium: 75px;
+  --icon-size-small: 50px;
+}
+
+:host{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vmin 0;
+}
+
+
+// icon resource
+:host(.apple-logo) img {
+  content: url("https://image.flaticon.com/icons/svg/226/226769.svg");
+}
+:host(.ng-logo) img {
+  content: url("https://cdn.svgporn.com/logos/angular-icon.svg");
+}
+:host(.react-logo) img {
+  content: url("https://cdn.svgporn.com/logos/react.svg");
+}
+:host(.vue-logo) img {
+  content: url("https://cdn.svgporn.com/logos/vue.svg");
+}
+:host(.flutter-logo) img {
+  content: url("https://cdn.svgporn.com/logos/flutter.svg");
+}
+:host(.heart) img{
+  content: url("https://image.flaticon.com/icons/svg/1052/1052132.svg");
+}
+
+// icon size
+:host(.icon--extra-large) img {
+  width: var(--icon-size-extra-large);
+  height: var(--icon-size-extra-large);
+}
+:host(.icon--large) img {
+  width: var(--icon-size-large);
+  height: var(--icon-size-large);
+}
+:host(.icon--medium) img {
+  width: var(--icon-size-medium);
+  height: var(--icon-size-medium);
+}
+:host(.icon--small) img {
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
+}
+
+// color filter: white icon
+:host(.icon--white) img{
+    filter: brightness(0) invert(1);
+}

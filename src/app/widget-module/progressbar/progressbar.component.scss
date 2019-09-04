@@ -1,0 +1,27 @@
+.progressbar {
+  all: unset;
+  width: 100%;
+  height: 1vmin;
+
+  border-radius: 10px;
+  border: 1px gray solid;
+  background-color: var(--highlight-color-global);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; // remove slider-thumb style
+
+  height: 4vmin;
+  width: 2vmin;
+  border-radius: 5px;
+
+  border: 1px solid #000000;
+  background: #ffffff;
+  box-shadow: 1px 1px 1px black;
+
+  cursor: pointer;
+
+  &:active{
+    box-shadow: 1px 1px 10px #77abb7;
+  }
+}

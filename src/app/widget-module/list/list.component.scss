@@ -1,0 +1,10 @@
+ul {
+  padding: 2vmin;
+  box-shadow: 0 4px 8px 0 var(--highlight-color-global);
+  border-radius: 15px;
+
+  transition-duration: 0.3s;
+}
+ul:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

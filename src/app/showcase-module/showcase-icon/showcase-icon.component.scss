@@ -1,0 +1,13 @@
+.wrapper{
+    margin: 5vmin 0;
+    display: flex;
+}
+
+.wrapper > s-icon + s-icon{
+    margin-left: 2vmin;
+}
+
+code{
+    background-color: whitesmoke;
+    padding: 2vmin;
+}

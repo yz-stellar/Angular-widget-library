@@ -1,0 +1,53 @@
+<h2>List</h2>
+<hr>
+
+<h3>One Line List</h3>
+<pre>
+    &lt;s-list&gt;
+        &lt;li class=&quot;s-list-item&quot; *ngFor=&quot;let console of consoles&quot; [title]=&quot;console.name&quot;&gt;&lt;/li&gt;
+    &lt;/s-list&gt;
+</pre>
+<div class="wrapper">
+    <s-list>
+        <li class="s-list-item" *ngFor="let console of consoles" [title]="console.name"></li>
+    </s-list>
+</div>
+<hr />
+
+<h3>Two Line List</h3>
+<pre>
+    &lt;s-list&gt;
+        &lt;li class=&quot;s-list-item&quot; 
+            *ngFor=&quot;let console of consoles&quot; 
+            [title]=&quot;console.name&quot; 
+            [subtitle]=&quot;console.company&quot;&gt;
+        &lt;/li&gt;
+    &lt;/s-list&gt;
+</pre>
+<div class="wrapper">
+    <s-list>
+        <li class="s-list-item" *ngFor="let console of consoles" [title]="console.name" [subtitle]="console.company"></li>
+    </s-list>
+</div>
+<hr />
+
+<h3>List with Button</h3>
+<pre>
+    &lt;s-list&gt;
+        &lt;li class=&quot;s-list-item&quot; *ngFor=&quot;let console of consoles&quot; [title]=&quot;console.name&quot; [subtitle]=&quot;console.company&quot;&gt;
+            &lt;s-button class=&quot;btn--small&quot;&gt;
+                &lt;s-icon class=&quot;heart icon--white&quot;&gt;&lt;/s-icon&gt;
+            &lt;/s-button&gt;
+        &lt;/li&gt;
+    &lt;/s-list&gt;
+</pre>
+<div class="wrapper">
+    <s-list>
+        <li class="s-list-item" *ngFor="let console of consoles" [title]="console.name" [subtitle]="console.company">
+            <s-button class="btn--small">
+                <s-icon class="heart icon--white"></s-icon>
+            </s-button>
+        </li>
+    </s-list>
+</div>
+<hr />

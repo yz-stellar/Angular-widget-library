@@ -1,0 +1,7 @@
+.wrapper{
+    margin: 3vmin 0;    
+}
+
+.wrapper > s-button + s-button{
+    margin-left: 2vmin;
+}
